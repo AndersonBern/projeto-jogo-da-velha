@@ -139,6 +139,10 @@ header {
 
 @media screen and (max-width: 500px){
     #jogo {
+        height: 450px;
+    }
+    
+    #fundo {
         height: 500px;
     }
     
