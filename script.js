@@ -24,14 +24,15 @@ function escolherCampo(id) {
     listaJogadaPlayer.push(id);
 
     console.log(player, cpu);
-    
+
+       
     if (campo.classList == 'campo') {
 
         campo.classList.add('preenchido');
 
         campo.style.backgroundImage = `url(imagens/img-${player}.png)`;
 
-        
+        campo.removeAttribute('onclick');
     }
     
 }
