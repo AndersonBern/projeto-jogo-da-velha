@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
+    <h1 id="msg">Jogo da Velha</h1>
     
     <header id="opt">
         <p>Você quer ser:</p>
@@ -27,8 +29,12 @@
         <div id="7" class="campo" onclick="escolherCampo(7), jogadaPC()"></div>
         <div id="8" class="campo" onclick="escolherCampo(8), jogadaPC()"></div>
         <div id="9" class="campo" onclick="escolherCampo(9), jogadaPC()"></div>
+        
     </main>
 
+    <div id="fundo"></div>
+    <p id="vencedor" onclick="location.reload(true)"><span class="material-symbols-outlined">refresh</span></p>
+    
     
     <script src="script.js"></script>
 </body>

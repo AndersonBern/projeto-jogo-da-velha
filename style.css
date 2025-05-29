@@ -7,6 +7,7 @@
 
 body {
     height: 100dvh;
+    position: relative;
 }
 
 h1 {
@@ -33,7 +34,7 @@ header {
 #xis {
     height: 150px;
     width: 200px;
-    background-color: rgb(89, 248, 123);
+    background-color: #59f87b;
     background-image: url(imagens/img-1.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -47,7 +48,7 @@ header {
 #bola {
     height: 150px;
     width: 200px;
-    background-color: rgb(245, 77, 77);
+    background-color: rgba(245, 77, 77);
     background-image: url(imagens/img-0.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -94,4 +95,51 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#vencedor {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+
+    left: 50%;
+    top: 55%;
+
+    transform: translate(-50%, -50%);
+    background-color: rgb(231, 208, 4);
+    border: 1px solid rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+
+    display: none;
+}
+#vencedor > span {
+    font-size: 4em;
+    padding: 20px;
+    
+}
+#vencedor:hover {
+    background-color: rgb(167, 150, 2);
+    color: white;
+}
+
+#fundo {
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    background-color: #59f87c8c;
+
+    left: 50%;
+    top: 55%;
+
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    #jogo {
+        height: 500px;
+    }
+    
 }
