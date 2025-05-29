@@ -140,13 +140,19 @@ header {
 
 @media screen and (max-width: 500px){
     #jogo {
+        position: absolute;
+        width: 430px;
         height: 450px;
         margin-top: 50px;
+
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
     }
     
     #fundo {
         height: 500px;
-        margin-bottom: 50px;
     }
     
 }
