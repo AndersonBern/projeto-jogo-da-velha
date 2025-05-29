@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100dvh;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 3em;
+}
+
+header {
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#escolha {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#xis {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(89, 248, 123);
+    background-image: url(imagens/img-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#bola {
+    height: 150px;
+    width: 200px;
+    background-color: rgb(245, 77, 77);
+    background-image: url(imagens/img-0.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 2px solid rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#xis:hover, #bola:hover {
+    background-color: rgb(173, 253, 226);
+    border: 2px solid black;
+    transform: scale(1.05);
+}
+
+#jogo {
+    width: 90%;
+    height: 80%;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: black;
+    margin: 30px auto;
+}
+
+.campo {
+    background-color: white;
+    width: 32%;
+    height: 32%;
+    cursor: pointer;
+}
+.campo:hover {
+    background-color: rgb(134, 215, 247);
+    border-radius: 5px;
+}
+
+.campo.preenchido {
+    background-color: white;
+    width: 32%;
+    height: 32%;
+    background-image: url(imagens/img-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

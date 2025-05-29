@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    
+    <header id="opt">
+        <p>Você quer ser:</p>
+        <div id="escolha">
+            <div id="xis" onclick="escolha(1)"></div>
+            <div id="bola" onclick="escolha(0)"></div>
+        </div>
+    </header>
+
+    <main id="jogo">
+        <div id="1" class="campo" onclick="escolherCampo(1), jogadaPC()"></div>
+        <div id="2" class="campo" onclick="escolherCampo(2), jogadaPC()"></div>
+        <div id="3" class="campo" onclick="escolherCampo(3), jogadaPC()"></div>
+        <div id="4" class="campo" onclick="escolherCampo(4), jogadaPC()"></div>
+        <div id="5" class="campo" onclick="escolherCampo(5), jogadaPC()"></div>
+        <div id="6" class="campo" onclick="escolherCampo(6), jogadaPC()"></div>
+        <div id="7" class="campo" onclick="escolherCampo(7), jogadaPC()"></div>
+        <div id="8" class="campo" onclick="escolherCampo(8), jogadaPC()"></div>
+        <div id="9" class="campo" onclick="escolherCampo(9), jogadaPC()"></div>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
