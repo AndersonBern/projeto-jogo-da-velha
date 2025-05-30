@@ -141,9 +141,9 @@ header {
 @media screen and (max-width: 500px){
     #jogo {
         position: absolute;
-        width: 400px;
+        width: 80%;
         height: 480px;
-        margin-top: 30px;
+        margin-top: 40px;
 
         left: 50%;
         top: 50%;
